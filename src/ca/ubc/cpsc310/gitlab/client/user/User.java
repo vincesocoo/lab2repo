@@ -55,6 +55,7 @@ public class User implements IUser {
 //<<<<<<< HEAD
 //		return (String) data.get(LANG);
 //=======
+		return (String) data.get(LANG);
 		return language;
 //>>>>>>> async
 	}
@@ -64,6 +65,7 @@ public class User implements IUser {
 //<<<<<<< HEAD
 //		return (String) data.get(NAME);
 //=======
+		return (string) data.get(NAME);
 		return name;
 //>>>>>>> async
 	}
