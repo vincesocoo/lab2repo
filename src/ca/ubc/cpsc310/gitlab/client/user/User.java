@@ -35,6 +35,7 @@ public class User implements IUser {
 //		return (String) data.get(LANG);
 //=======
 //>>>>>>> 12da3a7f614bd70de07e340c26ab60eafcb217bf
+		omg sdfsdfasdf
 		return language;
 	}
 
@@ -47,33 +48,39 @@ public class User implements IUser {
 //		return (string) data.get(NAME);
 //=======
 //>>>>>>> 12da3a7f614bd70de07e340c26ab60eafcb217bf
+		omg sdfsdfs
 		return name;
 	}
 
 	@Override
 	public List<ProductItem> getWishList() {
+		omg sfsdfsdfs
 		return wishList;
 	}
 
 	@Override
 	public List<ProductItem> getShoppingCart() {
+		omg sfsfsdfd
 		return shoppingCart;
 	}
 
 	@Override
 	public void setLanguage(String language) {
+		omg sfsdfsdgs
 		this.language = language;
 		
 	}
 
 	@Override
 	public void setName(String name) {
+		omg sdfsdfbsdb
 		this.name = name;
 		
 	}
 
 	@Override
 	public void addItemToWishList(ProductItem o) {
+		dsfnsdofnsodno
 		this.wishList.add(o);
 		
 	}
