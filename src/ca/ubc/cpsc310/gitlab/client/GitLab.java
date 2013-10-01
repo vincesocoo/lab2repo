@@ -1,13 +1,6 @@
 package ca.ubc.cpsc310.gitlab.client;
 
-//<<<<<<< HEAD
 
-//import java.util.List;
-
-
-//import ca.ubc.cpsc310.gitlab.client.user.IUser;
-
-//=======
 import java.util.List;
 import java.util.ArrayList;
 import ca.ubc.cpsc310.gitlab.client.user.User;
@@ -16,7 +9,7 @@ import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
 import ca.ubc.cpsc310.gitlab.client.service.LoadUsersService;
 import ca.ubc.cpsc310.gitlab.client.service.LoadUsersServiceAsync;
 import ca.ubc.cpsc310.gitlab.client.user.IUser;
-//>>>>>>> async
+
 import ca.ubc.cpsc310.gitlab.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -49,12 +42,9 @@ public class GitLab implements EntryPoint {
 			+ "attempting to contact the server. Please check your network "
 			+ "connection and try again.";
 
-//<<<<<<< HEAD
 	private final FlexTable flexTable = new FlexTable();
-//=======
 
 	final LoadUsersServiceAsync service = GWT.create(LoadUsersService.class);
-//>>>>>>> async
 
 	/**
 	 * This is the entry point method.
@@ -70,17 +60,12 @@ public class GitLab implements EntryPoint {
 				
 			}
 
-		//	@Override
-	//		public void onSuccess(List<IUser> result) {
-	//			Window.alert("Got list back with " +  result.size() + " entries");
-	//		
 			@Override
 			public void onSuccess(List<IUser> result) {
 				displayUsers(result);
 			
 			}});
 	
-//<<<<<<< HEAD
 
 		
 	}
@@ -124,11 +109,12 @@ public class GitLab implements EntryPoint {
 			
 			flexTable.setText(i+1,3,String.valueOf(user.getWishList().size()));
 		}
-//=======
-//>>>>>>> async
 
+//<<<<<<< HEAD
 		}
 
 	
+//=======
+//>>>>>>> 12da3a7f614bd70de07e340c26ab60eafcb217bf
 	}
 
