@@ -63,7 +63,7 @@ public class GitLab implements EntryPoint {
 	{
 		
 		service.getUsers(new AsyncCallback<List<IUser>>(){
-
+			
 			@Override
 			public void onFailure(Throwable caught) {
 					Window.alert("Error occured " + caught.getClass() + " : " + caught.getMessage());
@@ -101,6 +101,8 @@ public class GitLab implements EntryPoint {
 		flexTable.setText(0,3, "Wish List Size");
 		flexTable.setStyleName("centered-table", true);
 		
+		System.out.print("thing");
+		
 		for(int i=0; i < users.size(); i++)
 		{
 		
@@ -126,5 +128,7 @@ public class GitLab implements EntryPoint {
 //>>>>>>> async
 
 		}
+
+	
 	}
-}
+
