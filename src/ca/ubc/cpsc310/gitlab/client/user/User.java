@@ -3,10 +3,6 @@ package ca.ubc.cpsc310.gitlab.client.user;
 import java.util.ArrayList;
 
 import java.util.List;
-import java.util.HashMap;
-
-import java.util.Map;
-
 import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
 
 public class User implements IUser {
@@ -16,10 +12,8 @@ public class User implements IUser {
 	
 	private List<ProductItem> shoppingCart = new ArrayList<ProductItem>();
 	private List<ProductItem> wishList = new ArrayList<ProductItem>();
-	
 	private String name;
 	private String language;
-
 	
 	public User()
 	{
@@ -49,19 +43,16 @@ public class User implements IUser {
 	@Override
 	public void setLanguage(String language) {
 		this.language = language;
-		
 	}
 
 	@Override
 	public void setName(String name) {
 		this.name = name;
-		
 	}
 
 	@Override
 	public void addItemToWishList(ProductItem o) {
 		this.wishList.add(o);
-		
 	}
 	@Override
 	
