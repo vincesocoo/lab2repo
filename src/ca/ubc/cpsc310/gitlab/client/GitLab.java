@@ -35,11 +35,9 @@ public class GitLab implements EntryPoint {
 	public void onModuleLoad() 
 	{
 		service.getUsers(new AsyncCallback<List<IUser>>(){
-			@Override
 			public void onFailure(Throwable caught) {
 					System.err.println("Exception thrown: " + caught.getMessage());
 					Window.alert("Error occured " + caught.getClass() + " : " + caught.getMessage());
-				
 			}
 			@Override
 			public void onSuccess(List<IUser> result) {
@@ -59,6 +57,8 @@ public class GitLab implements EntryPoint {
 		flexTable.setText(0,2, "Shopping Cart Size");
 		flexTable.setText(0,3, "Wish List Size");
 		flexTable.setStyleName("centered-table", true);
+		
+		System.out.print("thing");
 		
 		for(int i=0; i < users.size(); i++)
 		{	
@@ -80,5 +80,7 @@ public class GitLab implements EntryPoint {
 			flexTable.setText(i+1,2,String.valueOf(user.getShoppingCart().size()));		
 			flexTable.setText(i+1,3,String.valueOf(user.getWishList().size()));
 		}
+
+		}
 	}
-}
+
